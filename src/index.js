@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM  from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Ejemplo(){
-    return <h1>Hello World</h1>
+function Ejemplo() {
+  return <h1>Hello World</h1>;
 }
 
 root.render(
-    <div>
-        <Ejemplo/>
-    </div>
-)
+  <div>
+    <Ejemplo />
+  </div>
+);
