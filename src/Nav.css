@@ -1,4 +1,32 @@
-.bg{
-    background-color: aqua;
-    color: white;
+.nav{
+    width: 13rem;
+    background-color: #181818;
+    height: 100vh;
+    position: fixed;
+    lefT: 0;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
+img{
+    width: 130px;
+    height: auto;
+}
+

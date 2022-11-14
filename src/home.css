@@ -1,0 +1,21 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+.Home{
+    color: white;
+    padding-left: 13rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-left: 40px;
+}
+
+.centerText{
+    font-family: 'Bebas Neue', cursive;
+    font-size:6rem;
+}
+
+h1 .blast:hover{
+  color: #08fdd8;
+  
+}
+
+

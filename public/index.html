@@ -10,6 +10,21 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      id="jquery"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/blast.js?ver=2.7.1"
+      id="blast-js"
+    ></script>
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,6 +39,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <style>
+      .blast {
+        display: inline-block;
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +59,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      setTimeout(() => {
+        console.log("");
+        var chars = $(".centerText").blast({
+          delimiter: "character",
+        });
+        // `Rebind the `mouseenter` event handler to the new `.blast` elements
+        $("h1").on("mouseenter", ".blast", function () {
+          // Store the targeted `.blast` element as an instanced variable
+          var $target = $(this);
+
+          // Add the animation classes to it
+          $target.addClass("animated rubberBand");
+
+          // Run the `removeClass` function on our instanced variable after
+          // 1 sec (animation length of `.bounce`)
+          setTimeout(function () {
+            $target.removeClass("animated rubberBand");
+          }, 1000);
+        });
+      }, 5000);
+    </script>
   </body>
 </html>

@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
-import './Nav.css'
+import "./nav.css";
+import logo from "./img/CG.png"
 
-export function Nav(){
-    <div className='bg'>
-        <h1 className='bg'>Hello Word</h1>
+export function Nav() {
+  return (
+    <div className="nav">
+      <img src={logo}></img>
     </div>
+  );
 }
