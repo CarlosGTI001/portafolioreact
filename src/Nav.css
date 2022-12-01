@@ -30,3 +30,12 @@ img{
     height: auto;
 }
 
+.logo{
+    text-align: center;
+}
+
+.name{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}

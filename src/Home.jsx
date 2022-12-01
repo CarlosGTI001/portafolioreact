@@ -1,6 +1,7 @@
 import "./home.css";
 import { Button } from "./Button";
 import { Typewriter } from "react-simple-typewriter";
+import { Mouse } from "./Mouse";
 //import $ from "jquery";
 //import Blast from "blast-vanilla";
 //import BouncingText from "react-bouncing-text";
@@ -42,8 +43,10 @@ export function Home() {
           />{" "}
           Developer
         </h1>
-        <Button title="Contactame!" btnTipe="btn btn-outline-success" size="13rem"/>
+        <br/>
+        <Button title="Contactame!" btnTipe="btn btn-outline-success Medium" size="13rem"/>
       </div>
+      <Mouse/>
     </div>
   );
 }
